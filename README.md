@@ -1,23 +1,30 @@
-FryeTag
+## Georgia Tech NLP Classification and Clustering Project
+
+The [Fryetag Final Report](https://github.com/dansthemanwhosakid/NLP-LDA-Project-Gutenberg/blob/main/DOC/team083report.pdf) contains a thorough explanation of the project and details the steps taken in the group's approach in classifying and clustering thousands of books from University of Michigan's Project Gutenberg dataset. 
+
+The [Fryetag Poster](https://github.com/dansthemanwhosakid/NLP-LDA-Project-Gutenberg/blob/main/DOC/team083poster.pdf) is a summary of the project. 
+
+### FryeTag
 An app for visualizing and analyzing plots and characters in books, screenplays
 and more.
 
-DESCRIPTION
+### DESCRIPTION
+
 The package consists of all files apart from data (downloaded during installation) that are necessary to run FryeTag. 
 FryeTag is a unique tool that helps users visualize large unstructured datasets, namely books. There are three notebooks contained in this folder.
-01_authors_pipeline.ipynb cleans text from the Project Gutenberg dataset. It then extracts the names of the top 20 most prolific authors.
+`01_authors_pipeline.ipynb` cleans text from the Project Gutenberg dataset. It then extracts the names of the top 20 most prolific authors.
 a resulting dataframe is created which contains the name of the author, title of the book(s), and text for each book. The results dataframe is cleaned further and readied for processing.
 SPARQL is used to find author's place of birth and coordinates for our map, which are saved into a dataframe.
 A CSV file is then created wich will hold the count of books per author, geographic coordinates, and LDA files.
 Train test split is then used on the authors with a voting classifier to classify who wrote a subset of text. This is pickled and saved in the trained-models folder.
 
-In the next file, 02_LDA_top_20_authors.ipynb, the results dataframe is loaded. A custom stopwords file is imported and the results are tokenized.
+In the next file, `02_LDA_top_20_authors.ipynb`, the results dataframe is loaded. A custom stopwords file is imported and the results are tokenized.
 LDA visualizations are then generated and the LDA_html files are saved.
 
-Lastly, 03_LDA_per_book.ipynb does roughly the same thing as 02_LDA_top_20_authors.ipynb, but on each book written by an author. 
+Lastly, `03_LDA_per_book.ipynb` does roughly the same thing as `02_LDA_top_20_authors.ipynb`, but on each book written by an author. 
 The previous file was run on all works by a given author.
 
-INSTALLATION
+### INSTALLATION
 1. Download the Gutenberg dataset by going to https://web.eecs.umich.edu/~lahiri/gutenberg_dataset.html and clicking “Link to Dataset”
 2. Move the Gutenberg folder to the CODE folder
 3. cd to the CODE folder
@@ -41,7 +48,7 @@ INSTALLATION
     a. Note: the user can specify the port when passing the --server.port parameter just make sure the localhost address is aligned
 
 
-EXECUTION
+### EXECUTION
 If not already in the lit-nlp dir, cd there. Then run "streamlit run fryetag.py"
 
 1. In your browser, go to http://localhost:8501
