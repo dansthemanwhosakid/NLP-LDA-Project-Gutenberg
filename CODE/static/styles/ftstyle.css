@@ -1,0 +1,172 @@
+footer {
+    visibility: hidden;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #27332F;
+    background-color: transparent;
+}
+
+h1 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #27332F;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+img {
+    vertical-align: middle;
+    padding-left: 30px;
+}
+
+.markdown-text-container {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.stBlock {
+    padding: 10px;
+}
+
+.stTextArea>div>div>textarea {
+    color: rgb(21, 125, 236);
+    font: 'Helvetica'
+}
+
+.stTextArea {
+    padding-left: 15px;
+    padding-right: 30px;
+}
+
+.stSelectbox {
+    padding-left: 15px;
+    padding-right: 30px;
+}
+
+.Widget stTextArea>div>div>input {
+    color: #27332F;
+    font: 'Helvetica'
+}
+
+.streamlit-button.icon-button:active {
+    color: #DC143C;
+    border-color: rgb(21, 125, 236);
+    background-color: rgb(21, 125, 236);
+}
+
+.streamlit-button.icon-button:hover {
+    border-color: rgb(21, 125, 236);
+    color: #DC143C;
+}
+
+.streamlit-button.icon-button:focus:not(:active) {
+    border-color: rgb(21, 125, 236);
+    color: white;
+}
+
+.streamlit-button:focus {
+    box-shadow: 0 0 0 0.2rem rgb(21, 125, 236,0.5);
+    outline: none;
+}
+
+header .decoration {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 2px;
+    background-image: linear-gradient(90deg,rgb(31, 119, 180, 0.4), rgb(220,20,60,0.5));
+    z-index: 1000020;
+}
+
+.sidebar .sidebar-content {
+    background-color: transparent;
+    background-image: linear-gradient(180deg,#FFF, rgb(31, 119, 180, 0.4));
+    font-size: 14px;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    height: 100vh;
+    overflow: auto;
+    padding: 5rem 1rem;
+    position: relative;
+    transition: margin-left .3s,box-shadow .3s;
+    width: 300px;
+    z-index: 100;
+}
+
+/* Widget CSS */
+
+.Widget>label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.stSlider {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+.stRadio {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+.sliderTickBar {
+    color: white;
+}
+
+.st-ae {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.tickBarMin {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.tickBarMax {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.streamlit-expanderContent {
+    padding-top: 0px;
+    padding-left: 30px;
+    padding-right: 35px;
+    border-bottom-color: transparent;
+    padding-bottom: 20px;
+}
+
+.streamlit-expanderHeader {
+    color: white;
+}
+
+.reportview-container dl, .reportview-container ol, .reportview-container p, .reportview-container ul {
+    padding-left: 30px;
+}
+
+.reportview-container h1, .reportview-container h2, .reportview-container h3 {
+    padding-left: 30px;
+}
+
+.fileUploadDropzone {
+    background: rgb(21, 125, 236, 0.25);
+    width: 500px;
+    padding-left: 30px;
+}
+
+.stFileUploader {
+    padding-left: 30px;
+}
+
+iframe {
+    padding-left: 25px;
+}
